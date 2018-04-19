@@ -16,17 +16,7 @@ public class Character {
 	{
 		this.yPos = newYPos;
 	}
-
-	public void setScore (int newScore )
-	{
-		this.score = newScore;
-	}
-
-	public void setMoves (int newMoves)
-	{
-		this.moves = newMoves;
-	}
-
+	
 	public int getXPos(){
 		return this.xPos;
 	}
@@ -36,9 +26,20 @@ public class Character {
 	}
 
 
+	public void setScore (int newScore )
+	{
+		this.score = newScore;
+	}
+	
 	public int getScore(){
 		return this.score;
 	}
+
+	public void setMoves (int newMoves)
+	{
+		this.moves = newMoves;
+	}
+	
 
 	public int getMoves(){
 		return this.moves;
@@ -58,10 +59,14 @@ public class Character {
 //
 //    }
 
-	public void resetPos(){
+	public void resetXPos(){
 		this.xPos = 0;
+		
+	}  
+	
+	public void resetYPos(){
 		this.yPos = 0;
-		this.moves = 0;
+		
 	}  
 
 	public void resetScore(){
