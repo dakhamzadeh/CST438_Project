@@ -68,6 +68,11 @@ public class Character {
 		this.yPos = 0;
 		
 	}  
+	
+	public void resetMoves(){
+		this.yPos = 0;
+		
+	}  
 
 	public void resetScore(){
 		this.score = 0;
