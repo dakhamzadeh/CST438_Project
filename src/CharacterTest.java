@@ -7,6 +7,15 @@ import org.junit.BeforeClass;
 
 import org.junit.Ignore;
 import org.junit.Test;
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.AfterClass;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 public class CharacterTest {
@@ -20,7 +29,6 @@ public class CharacterTest {
 //	public void test() {
 //		fail("Not yet implemented");
 //	}
-	
 	
 
 	public void testSetXPos() {
@@ -82,7 +90,12 @@ public class CharacterTest {
 
 	} 
 	
-	
+	@Test
+	public void testResetMoves() {
+		Character character = new Character();
+		character.setMoves(0);
+		assertEquals(character.getMoves(),0,0);
+	}
 	
 	@Test
 	public void testResetScore(){
