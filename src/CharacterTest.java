@@ -4,19 +4,7 @@ import org.junit.AfterClass;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
-
-import org.junit.Ignore;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.junit.After;
-import org.junit.AfterClass;
-
-import org.junit.Before;
-import org.junit.BeforeClass;
-
-import org.junit.Ignore;
-import org.junit.Test;
-
 
 public class CharacterTest {
 	
@@ -66,6 +54,14 @@ public class CharacterTest {
         
         
     }
+	
+	@Test
+	  public void notNullTest() {
+		Character character = new Character();
+	    assertNotNull("Verify that character is NOT null", character);
+	 
+	  }
+	
 	
 	@Test
 	public void testGetMoves() {
