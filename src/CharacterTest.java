@@ -9,7 +9,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 
-
 public class CharacterTest {
 	
 //	   execute only once, in the starting 
@@ -50,12 +49,41 @@ public class CharacterTest {
         assertEquals(character.getXPos(), 4,0);
     }
  
+	
 	@Test
 	public void testSetMoves() {
         Character character = new Character();
         character.setMoves(1);
         assertEquals(character.getMoves(), 1,0);
+        
+        
     }
+	
+	@Test
+	public void testGetMoves() {
+        Character character = new Character();
+        character.setMoves(4);
+        assertEquals(character.getMoves(), 4,0);   
+    }
+	
+	@Test
+	public void testResetXPos(){
+		Character character = new Character();
+		character.setXPos(0);
+		assertEquals(character.getXPos(),0,0);
+
+	} 
+	
+	@Test
+	public void testResetYPos(){
+		Character character = new Character();
+		character.setYPos(0);
+		assertEquals(character.getYPos(),0,0);
+
+	} 
+	
+	
+	
 	@Test
 	public void testResetScore(){
 		Character character = new Character();
@@ -64,9 +92,8 @@ public class CharacterTest {
 	}
 	
 //	 //execute only once, in the end
-//	   @AfterClass
-//	   public static void  afterClass() {
-//	      System.out.println("in after class");
-//	   }
+	   @AfterClass
+	   public static void  afterClass() {
+	      System.out.println("in after class");   }
 
 }
