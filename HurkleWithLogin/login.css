@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Industrial (Kuler name)
+E1DDD4(cement) ; 6D6D6D (gray) ; 313639 (near black); F7C000 (yellow-orange); EAA645(golden rod) */
+
+body
+{
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    background-color: #E1DDD4;
+    color: #313639 ;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+h2
+{
+    color: #6D6D6D;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h5
+{
+    color: #F7C000;
+    padding: 1em;
+    background-color:#6D6D6D;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width:500px;
+}
+
+iframe
+{
+    background-color: #EAA645;
+}
+
+.fset
+{
+    width:500px;
+}
+legend
+{
+    color: #6D6D6D;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:#F7C000;
+    font-family:Copperplate,Futura, monospace; 
+}
